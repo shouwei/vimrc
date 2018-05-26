@@ -53,7 +53,12 @@ vim-pug https://github.com/digitaltoad/vim-pug
 lightline.vim https://github.com/itchyny/lightline.vim
 vim-abolish https://github.com/tpope/tpope-vim-abolish
 mru.vim https://github.com/vim-scripts/mru.vim
-vim-markdown https://github.com/plasticboy/vim-markdown
+rust.vim https://github.com/rust-lang/rust.vim
+tabular https://github.com/godlygeek/tabular
+tlib_vim https://github.com/tomtom/tlib_vim
+vim-airline https://github.com/vim-airline/vim-airline
+vim-ingo-library https://github.com/inkarkat/vim-ingo-library
+vim-mark https://github.com/inkarkat/vim-mark
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
