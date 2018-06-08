@@ -16,14 +16,21 @@ noremap <leader>// :Commentary<cr>
 " Cursor is green
 " Constants are not underlined but have a slightly lighter background
 " gui* is for the GUI version and cterm* from the terminal version
-highlight Normal guibg=Black guifg=white
-highlight Normal ctermbg=Black ctermfg=white
-highlight Cursor guibg=Green guifg=Green
-highlight Cursor ctermbg=Green ctermfg=Green
-highlight NonText guibg=grey80
-highlight Constant gui=NONE guibg=Black guifg=Red
-highlight Comment term=Bold ctermfg=Darkred guifg=Green
-highlight Special gui=NONE guibg=grey
+" highlight Normal guibg=Black guifg=white
+" highlight Normal ctermbg=Black ctermfg=white
+" highlight Cursor guibg=Green guifg=Green
+" highlight Cursor ctermbg=Green ctermfg=Green
+" highlight NonText guibg=grey80
+" highlight Constant gui=NONE guibg=Black guifg=Red
+" highlight Comment term=Bold ctermfg=Darkred guifg=Green
+" highlight Special gui=NONE guibg=grey
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+
+" IMPORTANT: Uncomment one of the following lines to force
+" using 256 colors (or 88 colors) if your terminal supports it,
+" but does not automatically use 256 colors by default.
+"set t_Co=256
+"set t_Co=88
+let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
