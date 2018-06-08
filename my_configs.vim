@@ -5,10 +5,20 @@ set fileencoding=utf-8  " The encoding written to file.
 set t_Co=256    " enable 256 color for all terminals
 set laststatus=1    " Always show the status line
 syntax on
-colorscheme desert
+colorscheme sublimemonokai
 
 "for block comments
 noremap <leader>// :Commentary<cr>   
+
+" special color settings for C++
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
+let g:cpp_no_function_highlight = 1
+
 
 " Set nice colors
 " background for normal text is light grey
@@ -16,7 +26,7 @@ noremap <leader>// :Commentary<cr>
 " Cursor is green
 " Constants are not underlined but have a slightly lighter background
 " gui* is for the GUI version and cterm* from the terminal version
-" highlight Normal guibg=Black guifg=white
+" highlight Normal guibg=Black guifg=green
 " highlight Normal ctermbg=Black ctermfg=white
 " highlight Cursor guibg=Green guifg=Green
 " highlight Cursor ctermbg=Green ctermfg=Green
@@ -31,6 +41,6 @@ set fileencoding=utf-8  " The encoding written to file.
 " IMPORTANT: Uncomment one of the following lines to force
 " using 256 colors (or 88 colors) if your terminal supports it,
 " but does not automatically use 256 colors by default.
-"set t_Co=256
+set t_Co=256
 "set t_Co=88
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
